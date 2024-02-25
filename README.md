@@ -50,7 +50,7 @@ yarn install
 yarn dev
 ```
 
-![PyCharmImage2](img/pycharm2.png)
+![WebStormImage3](img/webstorm3.png)
 
 - set portforwading setting
 
