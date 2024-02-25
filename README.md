@@ -13,16 +13,65 @@ multipass info my-fullstack-vm
 multipass shell my-fullstack-vm
 ```
 
-## Using Dev Container on PyCharm
+## Using Dev Container on Jetbrains IDE
 
-### Create a container for development from IDE
+### Create a container for development from Web
 
-![PyCharmImage1](img/pycharm1.png)
+![WebStormImage1](img/webstorm1.png)
 
 [https://pleiades.io/help/idea/connect-to-devcontainer.html#create-dev-container-from-ide](https://pleiades.io/help/idea/connect-to-devcontainer.html#create-dev-container-from-ide)
 
+### Building Dev Container
+
+![WebStormImage2](img/webstorm2.png)
+
+### Install dependencies
+
+``` 
+yarn create next-app frontend --ts --eslint
+cp -pr frontend/* .
+rm -rf frontend/
+
+yarn add @mui/material @emotion/react @emotion/styled
+yarn add @mui/x-data-grid
+yarn add axios
+yarn add swr
+```
+
+or 
+
+``` 
+yarn install
+```
+
 ### Run the app from IDE
+
+```
+yarn dev
+```
 
 ![PyCharmImage2](img/pycharm2.png)
 
 - set portforwading setting
+
+
+
+## How to start
+
+
+### start backend server
+
+log in to backend dev container
+
+
+#### run web-server
+
+``` 
+python manage.py runserver --settings config.settings.development
+```
+
+#### migrating data
+
+``` 
+python manage.py migrate --settings config.settings.development
+```
