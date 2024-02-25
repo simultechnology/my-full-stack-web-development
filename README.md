@@ -15,17 +15,19 @@ multipass shell my-fullstack-vm
 
 ## Using Dev Container on Jetbrains IDE
 
-### Create a container for development from Web
+### Frontend
+
+#### Create a container for development from Web
 
 ![WebStormImage1](img/webstorm1.png)
 
 [https://pleiades.io/help/idea/connect-to-devcontainer.html#create-dev-container-from-ide](https://pleiades.io/help/idea/connect-to-devcontainer.html#create-dev-container-from-ide)
 
-### Building Dev Container
+#### Building Dev Container
 
 ![WebStormImage2](img/webstorm2.png)
 
-### Install dependencies
+#### Install dependencies
 
 ``` 
 yarn create next-app frontend --ts --eslint
@@ -44,7 +46,7 @@ or
 yarn install
 ```
 
-### Run the app from IDE
+#### Run the app from IDE
 
 ```
 yarn dev
@@ -54,6 +56,10 @@ yarn dev
 
 - set portforwading setting
 
+
+### Backend
+
+![PyCharmImage1](img/pycharm1.png)
 
 
 ## How to start
