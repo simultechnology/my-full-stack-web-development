@@ -5,7 +5,7 @@ module.exports = {
     async rewrites() {
         return [
             {
-                source: '/api2/:path*',
+                source: '/api/backend/:path*',
                 destination: 'http://host.docker.internal:8000/api/:path*/',
             },
         ]
