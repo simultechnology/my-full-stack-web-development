@@ -2,6 +2,7 @@ import Image from "next/image";
 import MyButton from "@/components/MyButton";
 import Component from "@/components/Component";
 import PinkBackgroundComponent from "@/components/PinkBackgroundDiv";
+import DataTable from "@/components/DataTable";
 
 export default function Home() {
   return (
@@ -128,6 +129,10 @@ export default function Home() {
         <hr/>
         <div>
           <PinkBackgroundComponent></PinkBackgroundComponent>
+        </div>
+        <hr/>
+        <div>
+          <DataTable></DataTable>
         </div>
       </main>
   );
