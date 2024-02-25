@@ -76,6 +76,12 @@ log in to backend dev container
 python manage.py runserver --settings config.settings.development
 ```
 
+#### Create migration file 
+
+``` 
+python manage.py makemigrations --settings config.settings.development
+```
+
 #### migrating data
 
 ``` 

@@ -6,4 +6,7 @@ from .models import Hello
 class Db(APIView):
     def get(self, request, format=None):
         entry = Hello.objects.get(id=1)
-        return Response({"message": entry.world})
+        return Response({
+            "message": entry.world,
+            "population": entry.population,
+            })
