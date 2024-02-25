@@ -1,5 +1,5 @@
 
-Setup Ubuntu Environment
+## Setup Ubuntu Environment
 
 ```sh 
 multipass list
@@ -11,4 +11,18 @@ multipass info my-fullstack-vm
 
 # enter 
 multipass shell my-fullstack-vm
- ```
+```
+
+## Using Dev Container on PyCharm
+
+### Create a container for development from IDE
+
+![PyCharmImage1](img/pycharm1.png)
+
+[https://pleiades.io/help/idea/connect-to-devcontainer.html#create-dev-container-from-ide](https://pleiades.io/help/idea/connect-to-devcontainer.html#create-dev-container-from-ide)
+
+### Run the app from IDE
+
+![PyCharmImage2](img/pycharm2.png)
+
+- set portforwading setting
